@@ -17,7 +17,7 @@ pipeline {
             steps {
                 // This will execute 'mvn clean install' in the shell to build the project
                 echo 'Building the project...'
-                sh 'mvn clean install'
+                bat 'mvn clean install'
             }
         }
 
@@ -25,7 +25,7 @@ pipeline {
             steps {
                 // This will execute 'mvn test' in the shell to run unit tests
                 echo 'Running unit tests...'
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
     }
